@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница входа</title>
+  <style>
+    body {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAUlQTFRFv7+/6+vr5ubm7e3t4eHh5eXl4uLi39/f4ODg3Nzc2tra2dnZ19fX1tbW1dXV1NTU0tLS09PT0NDQ0MjIyMzMzLy8vL6+vkwAAAAxJREFUCNdjYGBgPCCAEJKQAIXGGAkYQAABRkgSFnYuOIMAAAAASUVORK5CYII=');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      text-align: center; /* Центрируем содержимое формы */
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="index.html"> <!-- Указываем страницу для перехода -->
+    <h2>Авторизация</h2>
+    <div>
+      <label for="username">Логин:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <button type="submit">Войти</button>
+    <a href="reg.html">Регистрация</a> | <a href="/forgot-password">Забыли пароль?</a>
+  </form>
+</body>
+</html>

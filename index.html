@@ -1,0 +1,260 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--раздел заголовка-->
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">Оружейник</a></div>
+            <ul class="menu-items">
+                <li><a href="">ДОМОЙ</a></li>
+                <li><a href="">О НАС</a></li>
+                <li><a href="">ПОЧЕМУ МЫ</a></li>
+                <li><a href="svyaz.html">СВЯЗАТЬСЯ С НАМИ</a></li>
+				 <li><a href="vhod.html">ВХОД</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<div class="hero">
+    <div class="hero-container">
+        <div class="box1">
+            <h1>Узнайте все <br>о оружии</h1>
+                <p>Вы когда-нибудь хотели узнать все про огнестрельное оружие? В "Оружейнике" мы предлагаем вам посмотреть на широкий ассортимент оружия - от штурмовых винтовок до гранат, снайперских винтовок. Наша миссия - просветить народ об оружии.
+                </p>
+                <button class="contact-us-btn">Связаться с нами</button>
+        </div>
+        <div class="box2">
+            <img src="../images/gunsmith.jpg" class="box21" height="400px" alt="">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="search-form">
+    <div class="search-form-container">
+        <input type="text" placeholder="Введите название оружия..." class="search-input">
+        <button class="search-button">Поиск</button>
+    </div>
+</div>
+<script>
+        // Получаем элементы формы и списка оружия
+        const searchInput = document.querySelector('.search-input');
+        const searchButton = document.querySelector('.search-button');
+        const gunContainers = document.querySelectorAll('.container-content');
+
+
+        // Функция для обработки события клика по кнопке "Поиск"
+        searchButton.addEventListener('click', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            // Перебираем все контейнеры оружия и скрываем те, которые не соответствуют поисковому запросу
+            gunContainers.forEach(function (gunContainer) {
+                const gunName = gunContainer.querySelector('h4').textContent.toLowerCase();
+
+                if (gunName.includes(searchTerm)) {
+                    gunContainer.style.display = 'block';
+                } else {
+                    gunContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+  
+
+<div class="BIG">
+    <h2>Список оружия</h2>
+    <div class="big-container">
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/01-RPG-7.jpg" alt="">
+                <h4>РПГ-7</h4>
+                <p>Противотанковый гранатомет</p>
+              <button class="gun-btn" onclick="window.location.href = '1.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/02-Beretta M9.jpg" alt="">
+                <h4>Beretta M9</h4>
+                <p>Полуавтоматический пистолет</p>
+               <button class="gun-btn" onclick="window.location.href = '2.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/03-Glock 17.jpg" alt="">
+                <h4>Glock 17</h4>
+                <p>Компактный и надежный полуавтоматический пистолет</p>
+            <button class="gun-btn" onclick="window.location.href = '3.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/04-M16A4.jpg" alt="">
+                <h4>M16A4</h4>
+                <p>Автоматическая винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '4.html';">Подробнее</button>
+            </div>
+        </div>
+    
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/05-AK-47.jpg" alt="">
+                <h4>АК-47</h4>
+                <p>Автоматическая винтовка</p>
+              <button class="gun-btn" onclick="window.location.href = '5.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/06-AKM.jpg" alt="">
+                <h4>АКМ</h4>
+                <p>Модернизированная версия АК-47</p>
+             <button class="gun-btn" onclick="window.location.href = '6.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/07-M1918 Browning Automatic Rifle.jpg" alt="">
+                <h4>Browning Automatic Rifle</h4>
+                <p>Полуавтоматическая винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '7.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/08-Browning Automatic 5.jpg" alt="">
+                <h4>Browning Automatic 5</h4>
+                <p>Классический полуавтоматический дробовик</p>
+               <button class="gun-btn" onclick="window.location.href = '8.html';">Подробнее</button>
+            </div>
+        </div>
+    
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/09-Auto Shotgun.jpg" alt="">
+                <h4>Pancor Jackhammer</h4>
+                <p>Мощное оружие ближнего боя</p>
+               <button class="gun-btn" onclick="window.location.href = '9.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/10-SRS99D Sniper Rifle.jpg" alt="">
+                <h4>SRS99D</h4>
+                <p>Высокоточная снайперская винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '10.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/11-SVD Drafunov.jpg" alt="">
+                <h4>Снаперская винтовка Драгунова</h4>
+                <p>Советская снайперская винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '11.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/12-Sniper Rifle.png" alt="">
+                <h4>Brügger & Thomet APR 308</h4>
+                <p>Высокоточное оружие</p>
+               <button class="gun-btn" onclick="window.location.href = '12.html';">Подробнее</button>
+            </div>
+        </div>
+    
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/13-AW50 Sniper Rifle.jpg" alt="">
+                <h4>AW50</h4>
+                <p>Современная и мощная снайперская винтовка</p>
+              <button class="gun-btn" onclick="window.location.href = '13.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/14-Stealth Recon Scout.jpg" alt="">
+                <h4>Stealth Recon Scout</h4>
+                <p>Компактное и малозаметное оружие</p>
+              <button class="gun-btn" onclick="window.location.href = '14.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/15-FAMAS.jpg" alt="">
+                <h4>FAMAS</h4>
+                <p>Французская автоматическая винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '15.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/16-Smoke Grenade.jpg" alt="">
+                <h4>Дымовая граната</h4>
+                <p>Боеприпас для создания дымовой завесы</p>
+              <button class="gun-btn" onclick="window.location.href = '16.html';">Подробнее</button>
+            </div>
+        </div>
+    
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/17-MK 2 Grenade.jpg" alt="">
+                <h4>Граната MK 2</h4>
+                <p>Ручная осколочная граната</p>
+               <button class="gun-btn" onclick="window.location.href = '17.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/18-M84 Stun Grenade.jpg" alt="">
+                <h4>М84</h4>
+                <p>Боеприпас для временного ослепления противника</p>
+               <button class="gun-btn" onclick="window.location.href = '18.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/19-M14 Rifle.jpg" alt="">
+                <h4>Винтовка M14</h4>
+                <p>Полуавтоматическая винтовка</p>
+             <button class="gun-btn" onclick="window.location.href = '19.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/20-FN f2000.jpg" alt="">
+                <h4>FN F2000</h4>
+                <p>Современная штурмовая винтовка</p>
+               <button class="gun-btn" onclick="window.location.href = '20.html';">Подробнее</button>
+            </div>
+        </div>
+    
+        <div class="guns-container">
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/21-FN SCAR.jpg" alt="">
+                <h4>FN SCAR</h4>
+                <p>Модульная штурмовая винтовка</p>
+              <button class="gun-btn" onclick="window.location.href = '21.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/22-Walther P38.jpg" alt="">
+                <h4>Walther P38</h4>
+                <p>Популярный полуавтоматический пистолет</p>
+             <button class="gun-btn" onclick="window.location.href = '22.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/23-Remington 700.jpg" alt="">
+                <h4>Remington 700</h4>
+                <p>Одна из самых популярных и точных снайперских винтовок</p>
+             <button class="gun-btn" onclick="window.location.href = '23.html';">Подробнее</button>
+            </div>
+            <div class="container-content">
+                <img class="container-image" src="../images/armoury/24-S&W M500.jpg" alt="">
+                <h4>S&W M500</h4>
+                <p>Мощный и надежный револьвер</p>
+               <button class="gun-btn" onclick="window.location.href = '24.html';">Подробнее</button>
+            </div>
+        </div>   
+    </div>
+</div>
+</div>
+<!--footer-->
+</div>
+<div class="footer">
+        <div class="footer-container">
+            <ul class="nav-items">
+                <li><a href="">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Почему стоит выбрать нас</a></li>
+                <li><a href="">Связаться с нами</a></li>
+            </ul>
+            <p>© Сайт сделан <a href="">Дмитрием Тарасовым и Анастасией Лисичкиной</a></p>
+        </div>
+</div>
+
+</body>
+</html>
